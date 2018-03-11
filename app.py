@@ -28,12 +28,12 @@ def makeWebhookResult(req):
      #Title = "Hack #101"
      speech = "The of bot is in the WEBHOOK" 
      #+ str(cost[zone])
-     print("Response:")
-     print(speech)
+     #print("Response:")
+     #print(speech)
      return {
   #"messages": [
   # {
-  #  "displayText": result,
+  #  "displayText": speech,
   #  "platform": google,
   #  
   #    }
@@ -43,9 +43,9 @@ def makeWebhookResult(req):
   "fulfillment": {
    "messages":{
            "displayText": "result",
-    "platform": "google",
-    "textToSpeech": "Audio response",
-    "type": "simple_response"
+            "platform": "google",
+            "textToSpeech": "Audio response",
+            "type": "simple_response"
          #"data": {},
          #"contextOut": [],
        #"source": "BankRates"}
