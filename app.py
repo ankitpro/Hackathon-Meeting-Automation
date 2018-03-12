@@ -46,11 +46,7 @@ def makeWebhookResult(req):
         #"contextOut": [],
         "source": "Webhooks"
     }
-    }
 if __name__ == '__main__':
     port = int(os.getenv('PORT', 80))
     print ("Starting app on port %d" %(port))
     app.run(debug=True, port=port, host='0.0.0.0')
-
-On Sat, Mar 10, 2018 at 3:40 PM, ANKIT AGARWAL <ankitagarwalpro@gmail.com> wrote:
-api keys
