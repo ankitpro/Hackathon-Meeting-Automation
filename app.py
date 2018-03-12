@@ -20,7 +20,7 @@ def webhook():
     r.headers['Content-Type'] = 'application/json'
     return r
 def makeWebhookResult(req):
-    if req.get("result").get("action") == "input.unknown":
+    if req.get("result").get("action") == "Testing":
         #return {}
      result = req.get("result")
      parameters = result.get("parameters")
@@ -40,16 +40,12 @@ def makeWebhookResult(req):
   #
   # ]
          #"speech": "result",
-  "fulfillment": {
-   "messages":{
-           "displayText": "result",
-            "platform": "google",
-            "textToSpeech": "Audio response",
-            "type": "simple_response"
-         #"data": {},
-         #"contextOut": [],
-       #"source": "BankRates"}
-  }}
+        "speech": speech,
+        "displayText": speech,
+        #"data": {},
+        #"contextOut": [],
+        "source": "Webhooks"
+    }
     }
 if __name__ == '__main__':
     port = int(os.getenv('PORT', 80))
