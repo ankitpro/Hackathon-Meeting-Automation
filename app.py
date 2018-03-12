@@ -24,7 +24,7 @@ def makeWebhookResult(req):
         #return {}
      result = req.get("result")
      parameters = result.get("parameters")
-     #zone = parameters.get("bank-name")
+     name = parameters.get("Testing")
      #Title = "Hack #101"
      speech = "The of bot is in the WEBHOOK" 
      #+ str(cost[zone])
